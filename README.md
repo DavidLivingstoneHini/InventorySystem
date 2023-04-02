@@ -37,18 +37,6 @@ This application can be used by any small to mid-sized stores to easily maintain
 5. Default credentials for the connection to MySQL database is:
     - Username: root
     - Password: root
-  
-    Incase your database uses a different username and password to connect, follow these steps:
-    1. Go to the `lib` folder in the zip file that you downloaded.
-    2. Open the XML source file `DBCredentials.xml`.
-    3. Simply change the values of the two `entry` tags with values `username` and `password` from "root" to whatever username and password you are using. (Ln 12 and 13)
-        ```xml
-          <properties>
-          <comment>Credentials for the database.</comment>
-            <entry key="username">root</entry>
-            <entry key="password">root</entry>
-          </properties>
-        ```
 6. Once these credentials match, the JAR file should execute without any issues provided that you have the minimum JRE.
 7. You can log into the application using Username: `root` and Password: `root`.
 
