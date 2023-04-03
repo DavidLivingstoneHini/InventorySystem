@@ -48,7 +48,7 @@ public class SupplierDAO {
                     + "'";
             resultSet = statement.executeQuery(query);
             if (resultSet.next())
-                JOptionPane.showMessageDialog(null, "This supplier already exists.");
+                JOptionPane.showMessageDialog(null, "This Caterogy already exists.");
             else
                 addFunction(supplierDTO);
         } catch (SQLException e) {
@@ -64,7 +64,7 @@ public class SupplierDAO {
             prepStatement.setString(3, supplierDTO.getLocation());
             prepStatement.setString(4, supplierDTO.getPhone());
             prepStatement.executeUpdate();
-            JOptionPane.showMessageDialog(null, "New supplier has been added successfully.");
+            JOptionPane.showMessageDialog(null, "New Caterogy has been added successfully.");
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -80,7 +80,7 @@ public class SupplierDAO {
             prepStatement.setString(3, supplierDTO.getPhone());
             prepStatement.setString(4, supplierDTO.getSuppCode());
             prepStatement.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Supplier details have been updated.");
+            JOptionPane.showMessageDialog(null, "Caterogy details have been updated.");
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -91,7 +91,7 @@ public class SupplierDAO {
         try {
             String query = "DELETE FROM suppliers WHERE suppliercode='" +suppCode+ "'";
             statement.executeUpdate(query);
-            JOptionPane.showMessageDialog(null, "Supplier has been removed.");
+            JOptionPane.showMessageDialog(null, "Caterogy has been removed.");
         } catch (SQLException e) {
             e.printStackTrace();
         }

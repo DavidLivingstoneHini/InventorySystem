@@ -1,4 +1,3 @@
-package com.inventory.Algorithms;
 
 public class Queue {
 
