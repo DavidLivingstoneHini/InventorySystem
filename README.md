@@ -30,8 +30,8 @@ This application can be used by any small to mid-sized stores to easily maintain
 
 #### Minimum Requirements: JDK or JRE version 16.
 
-1. Download and unzip the ZIP folder: [InventoryManagement.zip](InventoryManagement.zip)
-2. Download the [SQL dump file](SQL/InventoryDB.sql)
+1. Download and unzip the ZIP folder
+2. Download the [SQL dump file](SQL/InventoryDB.sql), can also be found in the "SQL" folder in our root directory
 3. Import the SQL dump file using MySQL Workbench to locally create the sample schema and tables associated with this software.
 4. After the inventory schema has been locally created, you can go ahead and run the JAR file (InventoryManagement.jar) included in the zip folder.
 5. Default credentials for the connection to MySQL database is:
